@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <title>Invoice Creator</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="top">
+                <h1>Invoice creator</h1>
+                <p>Thanks for choosing GoodCorp, LLC!</p>
+            </section>
+
+            <section class="main">
+                <div class="buttons">
+                    <button class="btn" onclick="add(this)" value="10">
+                        Wash Car: $10
+                    </button>
+                    <button class="btn" onclick="add(this)" value="20">
+                        Mow Lawn: $20
+                    </button>
+                    <button class="btn" onclick="add(this)" value="30">
+                        Pull Weeds: $30
+                    </button>
+                </div>
+                <div class="invoice">
+                    <div class="row">
+                        <p class="subtitle">TASK</p>
+                        <p class="subtitle">TOTAL</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="subtitle">NOTES</p>
+                    <p class="subtitle">TOTAL AMOUNT</p>
+                </div>
+                <div class="row">
+                    <p class="notes">We accept cash, credit card, or PayPal</p>
+                    <span id="total">$0</span>
+                </div>
+                <button class="btn-reset">
+                    <img class="img-mail" src="images/mail.icon.png" />Send
+                    Invoice
+                </button>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
